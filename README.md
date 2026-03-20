@@ -1,5 +1,7 @@
 # Frog Escape - GDD
 
+![Frog Escape](resources/miniatura.png)
+
 ## 1. Información general
 - **Nombre del juego:** Frog Escape
 - **Género:** Endless Runner / Plataformas 2D
