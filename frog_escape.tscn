@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://cfdlrpgtr3vh"]
 
-[ext_resource type="PackedScene" uid="uid://burq8affx5rlx" path="res://maps/bg.tscn" id="1_jxuxl"]
+[ext_resource type="PackedScene" uid="uid://igdnm2bviuro" path="res://maps/jungle_map.tscn" id="1_itdoe"]
+[ext_resource type="PackedScene" uid="uid://bah8tdljrmxbg" path="res://frog/frog.tscn" id="2_7e2xg"]
 
-[node name="Game" type="Node2D" unique_id=2085438215]
+[node name="Game" type="Node2D" unique_id=670501470]
 
-[node name="Background" parent="." unique_id=1206450178 instance=ExtResource("1_jxuxl")]
+[node name="Node2D" parent="." unique_id=639132968 instance=ExtResource("1_itdoe")]
+
+[node name="CharacterBody2D" parent="." unique_id=1884090631 instance=ExtResource("2_7e2xg")]
+position = Vector2(138, 449)
