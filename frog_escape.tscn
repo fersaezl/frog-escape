@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://cfdlrpgtr3vh"]
 
+[ext_resource type="Script" uid="uid://r8inr2teppb2" path="res://frog_escape.gd" id="1_7e2xg"]
 [ext_resource type="PackedScene" uid="uid://igdnm2bviuro" path="res://maps/jungle_map.tscn" id="1_itdoe"]
 [ext_resource type="PackedScene" uid="uid://bah8tdljrmxbg" path="res://frog/frog.tscn" id="2_7e2xg"]
 
 [node name="Game" type="Node2D" unique_id=670501470]
+script = ExtResource("1_7e2xg")
 
-[node name="Node2D" parent="." unique_id=639132968 instance=ExtResource("1_itdoe")]
+[node name="Bg" parent="." unique_id=639132968 instance=ExtResource("1_itdoe")]
 
-[node name="CharacterBody2D" parent="." unique_id=1884090631 instance=ExtResource("2_7e2xg")]
+[node name="Frog" parent="." unique_id=1884090631 instance=ExtResource("2_7e2xg")]
 position = Vector2(138, 449)
