@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://dk3chng4ppjrg"]
+
+[ext_resource type="Texture2D" uid="uid://buu464p1r5453" path="res://resources/background/plx-1.png" id="1_i7s6n"]
+[ext_resource type="Texture2D" uid="uid://dv1ylkmd0gybi" path="res://resources/background/plx-2.png" id="2_xehqc"]
+[ext_resource type="Texture2D" uid="uid://j0jrb50lcap3" path="res://resources/background/plx-3.png" id="3_eq6nc"]
+[ext_resource type="Texture2D" uid="uid://b1ngon02smerv" path="res://resources/background/plx-4.png" id="4_bpugw"]
+[ext_resource type="Texture2D" uid="uid://bsijgxarsowng" path="res://resources/background/plx-5.png" id="5_gjjrj"]
+
+[node name="Node2D" type="Node2D" unique_id=1092185086]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=89476250]
+repeat_size = Vector2(800, 0)
+autoscroll = Vector2(-150, 0)
+repeat_times = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1597785330]
+position = Vector2(577.00006, 325)
+scale = Vector2(3.0000002, 3.0023148)
+texture = ExtResource("1_i7s6n")
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=840191089]
+repeat_size = Vector2(800, 0)
+autoscroll = Vector2(-150, 0)
+repeat_times = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2" unique_id=1090228821]
+position = Vector2(577.00006, 325)
+scale = Vector2(3.0000002, 3.0023148)
+texture = ExtResource("2_xehqc")
+
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=1588054163]
+repeat_size = Vector2(800, 0)
+autoscroll = Vector2(-150, 0)
+repeat_times = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3" unique_id=1923140712]
+position = Vector2(577.00006, 325)
+scale = Vector2(3.0000002, 3.0023148)
+texture = ExtResource("3_eq6nc")
+
+[node name="Parallax2D4" type="Parallax2D" parent="." unique_id=873129696]
+repeat_size = Vector2(800, 0)
+autoscroll = Vector2(-150, 0)
+repeat_times = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4" unique_id=1903169769]
+position = Vector2(577.00006, 325)
+scale = Vector2(3.0000002, 3.0023148)
+texture = ExtResource("4_bpugw")
+
+[node name="Parallax2D5" type="Parallax2D" parent="." unique_id=1628259159]
+repeat_size = Vector2(800, 0)
+autoscroll = Vector2(-150, 0)
+repeat_times = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D5" unique_id=813690071]
+position = Vector2(577.00006, 325)
+scale = Vector2(3.0000002, 3.0023148)
+texture = ExtResource("5_gjjrj")
