@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://gjk1a8kbyucr" path="res://resources/player/Idle (32x32).png" id="1_e7v6w"]
 [ext_resource type="Texture2D" uid="uid://do5r5jglw04b5" path="res://resources/player/Run (32x32).png" id="2_88uyt"]
 [ext_resource type="Texture2D" uid="uid://djiw1pjt6gio4" path="res://resources/player/Jump (32x32).png" id="3_32qu8"]
-[ext_resource type="AudioStream" uid="uid://pilblb36fr6g" path="res://resources/jump.wav" id="6_mbmpj"]
+[ext_resource type="AudioStream" uid="uid://pilblb36fr6g" path="res://resources/sounds/jump.wav" id="6_mbmpj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_88uyt"]
 atlas = ExtResource("1_e7v6w")
@@ -194,7 +194,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 15.0
+"speed": 20.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e7v6w"]
@@ -217,8 +217,9 @@ script = ExtResource("1_32qu8")
 unique_name_in_owner = true
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_athyi")
-animation = &"idle"
+animation = &"run"
 autoplay = "idle"
+frame_progress = 0.0015322838
 
 [node name="IdleCol" type="CollisionShape2D" parent="." unique_id=117567885]
 position = Vector2(-2, 12)

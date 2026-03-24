@@ -3,6 +3,11 @@
 [ext_resource type="Script" uid="uid://r8inr2teppb2" path="res://frog_escape.gd" id="1_7e2xg"]
 [ext_resource type="PackedScene" uid="uid://igdnm2bviuro" path="res://maps/jungle_map.tscn" id="1_itdoe"]
 [ext_resource type="PackedScene" uid="uid://bah8tdljrmxbg" path="res://frog/frog.tscn" id="2_7e2xg"]
+[ext_resource type="PackedScene" uid="uid://duabk2ij6tmgi" path="res://menus/hud.tscn" id="4_wl1gx"]
+[ext_resource type="PackedScene" uid="uid://8fgsq3ygpewp" path="res://menus/game_over.tscn" id="5_0kp65"]
+[ext_resource type="PackedScene" uid="uid://knnm6xjow8ea" path="res://menus/win.tscn" id="6_vpkss"]
+[ext_resource type="AudioStream" uid="uid://hqxu38an2fv4" path="res://resources/sounds/die.wav" id="7_jd6xq"]
+[ext_resource type="AudioStream" uid="uid://capoecne742cm" path="res://resources/sounds/win.wav" id="8_eyet0"]
 
 [node name="Game" type="Node2D" unique_id=670501470]
 script = ExtResource("1_7e2xg")
@@ -11,3 +16,21 @@ script = ExtResource("1_7e2xg")
 
 [node name="Frog" parent="." unique_id=1884090631 instance=ExtResource("2_7e2xg")]
 position = Vector2(138, 449)
+
+[node name="HUD" parent="." unique_id=285959589 instance=ExtResource("4_wl1gx")]
+
+[node name="GameOver" parent="." unique_id=1091627957 instance=ExtResource("5_0kp65")]
+process_mode = 2
+
+[node name="Win" parent="." unique_id=2024055141 instance=ExtResource("6_vpkss")]
+process_mode = 2
+
+[node name="ObsTimer" type="Timer" parent="." unique_id=1385416003]
+
+[node name="HitSound" type="AudioStreamPlayer" parent="." unique_id=857115742]
+process_mode = 3
+stream = ExtResource("7_jd6xq")
+
+[node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=195283146]
+process_mode = 3
+stream = ExtResource("8_eyet0")

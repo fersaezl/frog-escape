@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://duabk2ij6tmgi"]
+
+[ext_resource type="FontFile" uid="uid://cqdw65theijpg" path="res://resources/font/retro.ttf" id="1_633jc"]
+
+[node name="HUD" type="CanvasLayer" unique_id=285959589]
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=1217914530]
+offset_left = 5.0
+offset_right = 169.0
+offset_bottom = 51.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_633jc")
+theme_override_font_sizes/font_size = 30
+text = "PUNTOS: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartLabel" type="Label" parent="." unique_id=1616400584]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -471.0
+offset_top = -35.0
+offset_right = 471.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 3
+theme_override_fonts/font = ExtResource("1_633jc")
+theme_override_font_sizes/font_size = 55
+text = "PULSA ESPACIO PARA JUGAR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Controls" type="Label" parent="." unique_id=1464421435]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -321.0
+offset_top = -80.0
+offset_right = 321.0
+offset_bottom = -47.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_633jc")
+theme_override_font_sizes/font_size = 24
+text = "SALTAR: ESPACIO -  W - ↑ - CLICK IZQUIERDO"

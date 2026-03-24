@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 const JUMP_SPEED = -600
 const GRAVITY = 1500
+var game_started: bool = false
 
 func _physics_process(delta):
 	# Aplicar gravedad
@@ -21,11 +22,14 @@ func _physics_process(delta):
 	# Determinar estado y actualizar animación y colisión
 	if not is_on_floor():
 		if velocity.y < 0:
-			_set_state("jump")   # subiendo
+			_set_state("jump")    # subiendo
 		else:
-			_set_state("fall")   # cayendo
+			_set_state("fall")    # cayendo
 	else:
-		_set_state("idle")       # en el suelo
+		if game_started:
+			_set_state("run")     # corriendo
+		else: 
+			_set_state("idle")    # en el suelo
 	
 	# Aplicar movimiento
 	move_and_slide()

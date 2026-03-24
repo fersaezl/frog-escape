@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://knnm6xjow8ea"]
+
+[ext_resource type="FontFile" uid="uid://cqdw65theijpg" path="res://resources/font/retro.ttf" id="1_n78gc"]
+
+[node name="Win" type="CanvasLayer" unique_id=2024055141]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1946435498]
+offset_right = 1154.0
+offset_bottom = 650.0
+color = Color(0.38039216, 0.7254902, 0, 0.23529412)
+
+[node name="Button" type="Button" parent="." unique_id=819187799]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -202.0
+offset_top = -29.5
+offset_right = 202.0
+offset_bottom = 29.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_n78gc")
+theme_override_font_sizes/font_size = 40
+text = "VOLVER A JUGAR"
+
+[node name="Label" type="Label" parent="." unique_id=661295962]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -386.5
+offset_top = 122.0
+offset_right = 386.5
+offset_bottom = 186.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_n78gc")
+theme_override_font_sizes/font_size = 50
+text = "¡HAS GANADO LA PARTIDA!"
